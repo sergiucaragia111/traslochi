@@ -24,3 +24,9 @@ $(document).ready(function(){
   });
 });
 
+$('#bottone').click(()=>{
+  window.open('tel:393208921103');
+});
+ 
+
+
