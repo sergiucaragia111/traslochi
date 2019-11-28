@@ -1,0 +1,194 @@
+
+
+
+.margin-zero{
+    margin: 0 auto
+}
+
+:root {
+    --main-bg-color: rgba(255, 123, 0, 0.953);
+    --text-size-btn: 20px;
+    --text-color: rgb(88, 88, 88);
+  }
+
+  .mainBackgroundOrangeColor{
+    background: var(--main-bg-color);
+  }
+  .mainTextOrangeColor{
+    color: var(--main-bg-color);
+  }
+
+/* menu */
+/* change the color of active or hovered links */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: var(--main-bg-color);
+}
+
+.h1{
+    font-size: 50px;
+}
+.containerLogo{
+   
+    width: 120px;
+    height:auto
+}
+.logo { 
+
+    
+    background: url(img/logoDvpTraslochi);
+    background-size: cover
+  }
+
+/* fine menu */
+
+/* cover */
+ .tinted { opacity: 0.5; }
+
+ .background-img{
+     width: 100%;
+     height:calc(100vh - 110px);
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/mainImage.jpg);
+     background-size: cover;
+    
+ }
+
+ .btnContatti{
+     font-size: var(--text-size-btn);;
+     color: var(--main-bg-color);
+     border: 2px solid var(--main-bg-color);
+ }
+ .btnContatti:hover{
+     background: var(--main-bg-color);
+ }
+ .btnWhatsapp{
+    font-size: var(--text-size-btn);;
+    color: var(--main-bg-color);
+z-index: 1;
+   background: var(--main-bg-color);
+ }
+ .btnWhatsapp:hover{
+    cursor: pointer;
+    background: rgb(255, 190, 49);
+}
+
+/* fine cover */
+
+
+.content{
+  height:calc(100vh - 50px);
+  width: 100%;
+  position: absolute
+}
+.immagine{
+    width: 100%;
+}
+.testo{
+    width: 100%;
+    color: var( --text-color);
+    text-align: center;
+}
+.title{
+    color: var( --main-bg-color);
+}
+.servizi{
+    flex-direction: column;
+}
+
+/* preventivi prezzo trasloco */
+
+.cerchio{
+    background:  var(--main-bg-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.preventivi{
+    min-width: 200px;
+}
+
+
+.cover {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+/* ----------------------------------------------------- */
+.containerCards{
+    display: block;
+}
+
+
+.contatti{
+    flex-direction: column;
+}
+
+/* footer */
+.footer{
+height: 200px;
+background: rgb(29, 29, 29);
+}
+/*  fine footer */
+
+.altriServizi{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+.flexColumn{
+    flex-direction: column
+}
+
+
+@media (min-width: 768px) { 
+    .flex-direction{
+        flex-direction: row-reverse;
+    }
+    .contatti{
+        flex-direction: row;
+    }
+    .servizi{
+        flex-direction: row;
+    }
+    .containerCards{
+        display: flex;
+    }
+    .altriServizi{
+        flex-direction: row;
+    }
+   
+    .flexColumn{
+        flex-direction: row
+    }
+ }
+
+
+
+
+@media (min-width: 1200px) { 
+    .containerCards{
+        display: flex;
+    }
+    .flex-direction{
+        flex-direction: row-reverse;
+    }
+    .contatti{
+       
+        flex-direction: row;
+    }
+    .servizi{
+        flex-direction: row;
+    }
+    .altriServizi{
+        flex-direction: row;
+    }
+    .flexColumn{
+        flex-direction: row
+    }
+ }
