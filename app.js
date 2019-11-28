@@ -16,3 +16,11 @@ $(function () {
     startDate: '-3d'
 });
 
+
+
+$(document).ready(function(){
+  $('#openEmail').on('click',function(){
+     window.location.href = "mailto:stani98@libero.it?subject=PreventivoTrasloco&body="; 
+  });
+});
+

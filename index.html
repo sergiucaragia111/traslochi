@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html id="home" lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,41 +20,41 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
     <a class="navbar-brand " href="#">
       <div class="containerLogo">
         <img class="img-fluid" src="img/LogoDvp.png" alt="">
       </div>
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button   class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto">
+      <ul   class="navbar-nav m-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">IMBALLAGGI</a>
+          <a class="nav-link" href="#traslochi">TRASLOCHI</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TRASLOCHI</a>
+          <a class="nav-link" href="#imballaggi">IMBALLAGGI</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">SCALE AEREE</a>
+          <a class="nav-link" href="#altriServizi">SERVIZI</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTATTI</a>
+          <a class="nav-link" href="#contatti">CONTATTI</a>
         </li>
       </ul>
     </div>
   </nav>
   <!-- fine nav -->
   <!-- header -->
-  <div class="container-fluid background-img ">
+  <div  class="container-fluid background-img ">
     <div class="row flex-column  ">
       <div class=" content d-flex justify-content-center align-items-center">
         <div class="d-flex justify-content-center  ">
@@ -64,13 +63,15 @@
             <h1 class="text-light h2">Traslochi a Torino</h1>
 
             <div class=" mt-5 d-flex flex-column ">
-              <button class="btn btnContatti text-light rounded-pill  pl-5 pr-5 mb-3 " type="submit">
-                <i class="fas fa-phone text-light mr-3 "></i> CONTATTACI
+          
+              <form action="tel:3272434989"><button class="btn btnContatti text-light rounded-pill  pl-5 pr-5 mb-3 " type="submit"><i class="fas fa-phone text-light mr-3 "></i> CONTATTACI</button></form>
+              
+              <button  class="btn btnContatti text-light rounded-pill  pl-5 pr-5 " type="submit">
+                <i class="fab fa-whatsapp  mr-4  "></i> 3208921103
               </button>
-              <button class="btn btnContatti text-light rounded-pill  pl-5 pr-5 " type="submit">
-                <i class="fab fa-whatsapp  mr-4  "></i> 3323423523
-              </button>
-            </div>
+              <a href=" https://api.whatsapp.com/send?
+phone=3293171726&text=urlencodedtext"  target="_blank">send</a>
+          </div>
           </div>
         </div>
       </div>
@@ -83,21 +84,21 @@
     <div class="row flexColumn">
       <div class="col-12 bg-light   p-0">
         <div class="servizi  p-3 d-flex justify-content-around ">
-          <div class="d-flex flex-column text-center preventivi ">
+          <div class="d-flex flex-column text-center preventivi mt-4 mb-4 ">
             <div class=" cerchio  mx-auto d-flex flex-column justify-content-center mb-4">
               <i class="fas fa-file-alt fa-3x text-light "></i>
             </div>
             <p class="mainTextOrangeColor">PREVENTIVI CHIARI</p>
           </div>
 
-          <div class="d-flex flex-column text-center preventivi">
+          <div class="d-flex flex-column text-center preventivi mt-4 mb-4">
             <div class=" cerchio  mx-auto d-flex flex-column justify-content-center mb-4">
               <i class="fas fa-money-bill-wave fa-3x text-light "></i>
             </div>
             <p class="mainTextOrangeColor">PREZZO CONVENIENTE</p>
           </div>
 
-          <div class="d-flex flex-column text-center preventivi ">
+          <div class="d-flex flex-column text-center preventivi mt-4 mb-4 ">
             <div class=" cerchio mx-auto d-flex flex-column justify-content-center mb-4 ">
               <i class="fas fa-truck fa-3x text-light  "></i>
             </div>
@@ -113,14 +114,14 @@
   <div class="container bg-light mt-5 ">
     <div class="row ">
 
-      <div class="pl-5 pr-5 text-center">
+      <div  class="pl-5 pr-5 text-center">
         <h2 class="mt-5 title  ">ESPERTI NEL SERVIZIO DI TRASLOCO</h2>
         <p class="testo">Preventivi chiari, prezzi concordati e definitivi che non prevedono nessun costo aggiuntivo
           rispetto a quanto stipulato.
 
 
           Affidati a traslochi DVP . per un trasloco senza sorprese, sicuro ed onesto da tutti i punti di vista.</p>
-        <button class="btn btnContatti rounded-pill mb-5 " type="submit">
+        <button id="openEmail" class="btn btnContatti rounded-pill mb-5 " type="submit">
           <i class="far fa-file-alt mr-3"></i>Richiedi un preventivo
         </button>
       </div>
@@ -136,7 +137,7 @@
 
         </div>
 
-        <div class="col-12 col-md-6 testo text-center  p-5">
+        <div id="traslochi" class="col-12 col-md-6 testo text-center  p-5">
           <h3 class="text-uppercase mainTextOrangeColor">Traslochi con personale specializzato </h3>
           <p>La nostra ditta opera nel settore dei traslochi con personale specializzato e altamente qualificato a
             Torino. Il nostro team lavora con affidabilità e rapidità, utilizzando mezzi ed attrezzature di continua
@@ -154,7 +155,7 @@
           <img class="cover" src="img/traslochiMainImg.jpg" alt="">
 
         </div>
-        <div class="col-12 col-md-6 testo text-center p-5 ">
+        <div id="imballaggi" class="col-12 col-md-6 testo text-center p-5 ">
 
           <h3 class="text-uppercase mainTextOrangeColor">Imaballaggi di qualità</h3>
           <p>Mettiamo a Vostra disposizione i migliori imballaggi per proteggere gli oggetti ed il mobilio più
@@ -179,10 +180,8 @@
   <!--Fine Parte card -->
 
   <!-- altri servizi -->
-  <div class="container mt-5 bg-light pt-5 pb-5 mb-3">
-
-
-    <p class="h3 testo text-uppercase " >Altri servizi</p>
+  <div id="altriServizi" class="container mt-5 bg-light pt-5 pb-5 mb-3">
+    <p class="h3 testo text-uppercase mb-5" >Altri servizi</p>
     <div class="col-12 d-flex altriServizi ">
       <div class="col-12 col-md-4 p-0">
         <ul>
@@ -265,9 +264,36 @@
 
   <!-- fine about -->
   <!-- footer -->
-  <footer class="container-fluid text-light footer d-flex flex-column justify-content-center text-center">
-    <p>Potete seguirci anche sui social</p>
-    <i class="fab fa-facebook-f"></i>
+  <footer id="contatti" class="container-fluid text-light footer d-flex flex-column justify-content-center text-center">
+    <p class="h3 mt-4" >Contatti</p>
+    <div class=" col-7  d-flex m-auto">
+        <div class=" text-left m-auto ">
+          <div class="d-flex align-items-center  text-center">
+              <i class="fas fa-map-marker-alt mr-3"></i>
+              <p class="m-0">Via Vercelli, 1810036 Settimo Torinese TO</p>
+          </div>
+          <div class="d-flex align-items-center  text-center">
+              <i class="fas fa-phone mr-3"></i>
+              <p class="m-0"> Cellulare 3208921103</p>
+          </div>
+          </div>
+          <div class=" text-left m-auto  ">
+            <div class="d-flex">
+                <i class="far fa-file-alt mr-3"></i>
+                <p class="m-0">
+                  P.IVA 10705460011
+                </p>
+            </div>
+             <div class="d-flex align-items-center  text-center">
+                <i class="far fa-envelope mr-3"></i>
+                <p class="m-0">Email stani98@libero.it</p>    
+             </div>
+            
+          </div>
+         
+    </div>
+   
+    
   </footer>
   <!-- fine footer -->
   <script src="app.js"></script>

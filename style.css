@@ -1,5 +1,7 @@
 
-
+html {
+    scroll-behavior: smooth;
+   }
 
 .margin-zero{
     margin: 0 auto
@@ -20,7 +22,7 @@
 
 /* menu */
 /* change the color of active or hovered links */
-.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: var(--main-bg-color);
 }
@@ -30,7 +32,7 @@
 }
 .containerLogo{
    
-    width: 120px;
+    width: 100px;
     height:auto
 }
 .logo { 
@@ -47,7 +49,7 @@
 
  .background-img{
      width: 100%;
-     height:calc(100vh - 110px);
+     height:calc(100vh - 99px);
      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/mainImage.jpg);
      background-size: cover;
     
@@ -126,7 +128,7 @@ z-index: 1;
 
 /* footer */
 .footer{
-height: 200px;
+min-height: 200px;
 background: rgb(29, 29, 29);
 }
 /*  fine footer */
