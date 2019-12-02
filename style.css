@@ -272,3 +272,100 @@ background: rgb(29, 29, 29);
         grid-row-end:  2;
     }
  }
+
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+ /* testo animato  */
+ .contenitore {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+
+ main {
+    position: relative;
+    display: flex;
+  }
+  
+  h1 { margin: 0; color:white }
+  .marker, .r, .e1, .s1, .s2, .e2, .o , .c , .h ,.i{
+    animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    will-change: transform;
+  }
+  
+  .marker {
+    position: absolute; top: -4px; left: -3px;
+    height: 3px; width: 30px;
+    background-color: white;
+    animation-name: marker;
+  }
+  
+  .r { margin-left: 1px;   animation-name: r; }
+  .e1 { margin-left: 10px; animation-name: e1; }
+  .s1 { margin-left: 10px; animation-name: s1; }
+  .s2 { margin-left: 10px; animation-name: s2; }
+  .o { margin-left: 10px; animation-name: o; }
+  .c { margin-left: 10px; animation-name: c; }
+  .h { margin-left: 10px; animation-name: h; }
+  .i { margin-left: 10px; animation-name: i; }
+  .e2 { margin: 0 36px 0 42px; animation-name: e2; }
+  
+  @keyframes r { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(25px); }
+  }
+  @keyframes e1 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(40px); }
+  }
+  @keyframes s1 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(45px); }
+  }
+  @keyframes s2 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(50px); }
+  }
+  @keyframes e2 { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(60px); }
+  }
+  @keyframes o{ 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(65px); }
+  }
+  @keyframes c { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(70px); }
+  }
+  @keyframes h{ 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(75px); }
+  }
+  @keyframes i{ 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(80px); }
+  }
+  @keyframes marker { 
+    0%, 20% { transform: translateX(0); }
+    50%, 70% { transform: translateX(360px); }
+  }
+ /* fine testo animato  */

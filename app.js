@@ -28,5 +28,18 @@ $('#bottone').click(()=>{
   window.open('tel:393208921103');
 });
  
+// ANIMAZIONE TESTO
 
+/*
+See https://www.greensock.com/splittext/ for details. 
+This demo uses SplitText which is a membership benefit of Club GreenSock, https://www.greensock.com/club/
+*/
+function runText (textLine){
+  var mySplitText = new SplitText(textLine, { type: "chars" }),
+  tl = new TimelineLite();
+
+tl.staggerFrom(mySplitText.chars, 0.01, { opacity: 0 }, 0.08);
+}
+
+runText("#hud");
 
