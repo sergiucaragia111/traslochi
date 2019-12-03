@@ -9,13 +9,6 @@ $(function () {
     $('[data-toggle="popover"]').popover()
   })
 
-  // datepicker
-  $('#datepicker').datepicker({
-    uiLibrary: 'bootstrap4',
-    format: 'dd/mm/yyyy',
-    startDate: '-3d'
-});
-
 
 
 $(document).ready(function(){
@@ -24,10 +17,6 @@ $(document).ready(function(){
   });
 });
 
-$('#bottone').click(()=>{
-  window.open('tel:393208921103');
-});
- 
 
 
 
