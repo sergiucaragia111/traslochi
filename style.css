@@ -1,4 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 html {
     scroll-behavior: smooth;
    }
@@ -66,9 +68,23 @@ html {
 
 .h1{
     font-size: 50px;
+    font-family:'Roboto';
+    text-transform: uppercase ;
+    font-weight:bold;
 }
-.containerLogo{
+
+.line{
+    background: rgba(141, 141, 141, 0.356);
+    padding: 30px;
    
+}
+
+.uppercase{
+    font-family: 'Raleway', sans-serif;   
+    text-transform: uppercase 
+}
+
+.containerLogo{
     width: 100px;
     height:auto
 }
